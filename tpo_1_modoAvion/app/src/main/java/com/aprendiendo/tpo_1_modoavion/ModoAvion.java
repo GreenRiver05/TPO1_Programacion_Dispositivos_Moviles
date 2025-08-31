@@ -17,7 +17,7 @@ public class ModoAvion extends BroadcastReceiver {
         if (estadoModoAvion) {
             Toast.makeText(context, "Modo Avión ACTIVADO 🛫", Toast.LENGTH_LONG).show();
             Intent hacerLlamada = new Intent(Intent.ACTION_DIAL);
-            hacerLlamada.setData(Uri.parse("tel:2657545872"));
+            hacerLlamada.setData(Uri.parse("tel:2657555555"));
             hacerLlamada.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(hacerLlamada);
         } else {
